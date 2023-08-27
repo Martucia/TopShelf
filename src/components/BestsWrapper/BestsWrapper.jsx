@@ -81,7 +81,7 @@ const BestsWrapper = () => {
 
                 >
                     {products.map(product => <SwiperSlide key={product._id}>
-                        <ProductCart product={...product} paddingRight={width > 450 ? 0 : "20px"} />
+                        <ProductCart product={product} paddingRight={width > 450 ? 0 : "20px"} />
                     </SwiperSlide>)}
                 </Swiper>
 
