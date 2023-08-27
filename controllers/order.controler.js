@@ -69,6 +69,8 @@ const create = async (req, res, next) => {
             select: '_id discount',
         });
 
+        await User.findOneAndUpdate({ _id: req.userId }, { cart: [] })
+
         return res.status(200).json(orderOut);
 
     } catch (e) {
