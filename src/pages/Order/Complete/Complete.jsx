@@ -18,7 +18,7 @@ const Complete = () => {
         <div className={styles.wrapper}>
             <div className={styles.list}>
                 {order?.products.map(product => (
-                    <CompleteProduct key={product._id} {product} />
+                    <CompleteProduct key={product._id} {...product} />
                 ))}
             </div>
             <div className={styles.total}>
