@@ -127,7 +127,7 @@ const Order = () => {
 
                 dispatch(createOrder({
                     ...shipping,
-                    couponId: coupon._id,
+                    couponId: coupon?._id,
                     cart,
                     shippingCost: isShippingFree ? 0 : shippingCost,
                     total_sum: totalSum

@@ -51,12 +51,12 @@ const Complete = () => {
                     </p>
                     <p>
                         <span>Discount</span>
-                        <span>${order.discount.toFixed(2)}</span>
+                        <span>-${order.discount.toFixed(2)}</span>
                     </p>
                     {order.couponDiscount
                         && <p>
                             <span>Coupon discount</span>
-                            <span>${order.couponDiscount.toFixed(2)}</span>
+                            <span>-${order.couponDiscount.toFixed(2)}</span>
                         </p>}
                     <p>
                         <span>Shipping Costs</span>
