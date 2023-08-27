@@ -58,7 +58,6 @@ const Complete = () => {
                             <span>Coupon discount</span>
                             <span>${order.couponDiscount.toFixed(2)}</span>
                         </p>}
-
                     <p>
                         <span>Shipping Costs</span>
                         <span>${order.shipping.cost.toFixed(2)}</span>
