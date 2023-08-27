@@ -49,13 +49,13 @@ const Shelf = ({ title, type = "none", products, group = "bestSellers" }) => {
             <div className={styles.wrapper}>
                 {products
                     && <>
-                        {products.map((product => <ProductCart key={product._id} product={...product} />))}
+                        {products.map((product => <ProductCart key={product._id} product={product} />))}
                     </>
                 }
 
                 {type == "shelf"
                     && <>
-                        {productsState.map((product => <ProductCart key={product._id} product={...product} />))}
+                        {productsState.map((product => <ProductCart key={product._id} product={product} />))}
                     </>
                 }
 
