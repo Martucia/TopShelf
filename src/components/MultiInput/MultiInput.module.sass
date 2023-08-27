@@ -1,0 +1,40 @@
+$btn-size: 56px
+
+.multiinput
+    display: flex
+    flex-direction: column
+    gap: 10px
+    color: #aaa
+    font-size: 12px
+
+.name
+    padding-left: 10px
+
+.input
+    padding: 15px 20px
+    border-radius: 20px
+    transition: 0.3s
+    width: 100%
+    max-width: 100%
+    min-width: 100%
+    &.input_error
+        border-bottom: 2px solid #a8010194
+
+.error
+    color: #a80101
+    font-weight: 500
+    padding-left: 10px
+
+.input_block
+    display: grid
+    grid-template-columns: 1fr $btn-size
+    gap: 10px
+
+.btn
+    width: $btn-size
+    height: $btn-size
+    border: 1px solid #F4F4F4
+    border-radius: 20px
+    transition: 0.3s
+    &:hover
+        border: 1px solid #d3d3d3

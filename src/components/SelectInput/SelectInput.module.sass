@@ -1,0 +1,78 @@
+@import '@variables'
+
+.label
+    display: flex
+    flex-direction: column
+    gap: 10px
+    color: #aaa
+    font-size: 12px
+
+.name
+    padding-left: 10px
+
+.input
+    padding: 15px 20px
+    border-radius: 20px
+    transition: 0.3s
+    width: 100%
+    max-width: 100%
+    min-width: 100%
+    &.input_error
+        border-bottom: 2px solid #a8010194
+
+.error
+    color: #a80101
+    font-weight: 500
+    padding-left: 10px
+
+.block
+    width: 100%
+    position: relative
+
+.list
+    position: absolute
+    top: 60px
+    left: 0
+    background: #fff
+    z-index: 8
+    padding: 15px 10px
+    border-radius: 20px
+    transition: 0.3s
+    width: 100%
+    max-width: 100%
+    min-width: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
+    border: 1px solid #F4F4F4
+    button
+        text-align: left
+        width: 100%
+        padding: 8px
+        transition: 0.3s
+        border-bottom: 1px solid #F4F4F4
+        border-radius: 5px
+        &:last-child
+            border-bottom: 0
+        &:hover
+            background: #F4F4F4
+
+.input_block
+    position: relative
+    width: 100%
+
+.drop
+    position: absolute
+    right: 20px
+    top: 50%
+    transform: translate(0, -50%)
+    height: 100%
+    display: flex
+    align-items: center
+    padding: 0 10px
+    img
+        height: 15px
+
+.empty
+    padding: 10px 0
+    text-align: center

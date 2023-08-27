@@ -1,0 +1,52 @@
+@import '@variables'
+
+.catalog
+    width: 90%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 300px 1fr
+    padding: 40px 0
+    gap: 32px
+    @media screen and ( max-width: 1100px )
+        grid-template-columns: 1fr
+.header
+    padding: 5px 0 28px
+    display: flex
+    align-items: center
+    border-bottom: 1px solid #F4F4F4
+    justify-content: space-between
+
+.btn
+    padding: 5px 10px
+    border: 1px solid #F4F4F4
+    border-radius: 4px
+
+.title
+    font-size: 24px
+    line-height: 150%
+    letter-spacing: -0.5px
+    color: $gr-d
+
+.info
+    font-size: 16px
+    line-height: 150%
+    color: $gr-l
+    font-size: 14px
+    padding: 32px 0
+
+.info_title
+    font-weight: 500
+    font-size: 20px
+    line-height: 150%
+    color: #17AF26
+    margin-bottom: 16px
+
+.empty
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: 600
+    color: #AAA
+    font-size: 20px
+    max-height: 150px

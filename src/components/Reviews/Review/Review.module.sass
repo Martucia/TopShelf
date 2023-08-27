@@ -1,0 +1,81 @@
+@import '@variables'
+
+.review
+    background: #FFFFFF
+    border: 1px solid #F4F4F4
+    border-radius: 16px
+    color: $gr-d
+    width: 100%
+    max-width: 550px
+    height: 100%
+    position: relative
+    @media screen and ( max-width: 600px )
+        padding: 24px
+    @media screen and ( max-width: 450px )
+        width: calc(100% - 20px)
+
+.user
+    display: flex
+    align-items: center
+    gap: 16px
+    border-bottom: 1px solid #F4F4F4
+    position: relative
+
+.avatar
+    width: 36px
+    height: 36px
+    img
+        width: 100%
+        height: 100%
+
+.name
+    font-size: 16px
+
+.rate
+    display: flex
+    align-items: center
+
+.comment
+    font-size: 16px
+    line-height: 150%
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 6
+    overflow: hidden
+    text-overflow: ellipsis
+    @media screen and ( max-width: 450px )
+        font-size: 14px
+
+.date
+    font-weight: 300
+    font-size: 14px
+    line-height: 150%
+    color: #9D9EA2
+
+.bottom_date
+    position: absolute
+    bottom: 40px
+    left: 40px
+    @media screen and ( max-width: 450px )
+        bottom: 24px
+        left: 24px
+
+.edit
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0, calc(-50% - 8px))
+
+.btn
+    margin: 24px 0 0 calc(100% - 200px)
+    max-width: 200px
+    @media screen and ( max-width: 450px )
+        max-width: 100%
+        width: 100%
+        margin: 24px 0 0
+
+.error
+    color: #a80101
+    font-weight: 500
+    padding-left: 10px
+    margin-bottom: 30px

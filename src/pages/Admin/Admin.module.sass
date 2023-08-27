@@ -1,0 +1,9 @@
+.wrapper
+    display: grid
+    grid-template-columns: 420px 1fr
+    min-height: 100vh
+    @media screen and ( max-width: 1000px )
+        grid-template-columns: 200px 1fr
+        min-height: 0
+    @media screen and ( max-width: 550px )
+        grid-template-columns: 1fr

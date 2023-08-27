@@ -1,0 +1,42 @@
+@keyframes textAnimation {
+  0% {
+    content: "Loading...";
+  }
+
+  16% {
+    content: "Loading..";
+  }
+
+  32% {
+    content: "Loading.";
+  }
+
+  48% {
+    content: "Loading";
+  }
+
+  64% {
+    content: "Loading.";
+  }
+
+  80% {
+    content: "Loading..";
+  }
+
+  100% {
+    content: "Loading...";
+  }
+}
+
+
+.loader-text {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+
+  &:before {
+    content: "";
+    animation: textAnimation 1.5s infinite;
+  }
+
+}

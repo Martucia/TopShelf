@@ -1,0 +1,103 @@
+.product
+    display: grid
+    grid-template-columns: 56px 1fr
+    gap: 16px
+    padding: 20px 0 24px
+    border-bottom: 1px solid #F4F4F4
+    width: 100%
+
+.image
+    width: 100%
+    height: 56px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #FFFFFF
+    border: 1px solid #F4F4F4
+    border-radius: 6px
+    img
+        width: 80%
+
+.wrapper
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+.block
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 10px
+    justify-content: space-between
+    width: 100%
+
+.name
+    font-size: 14px
+    line-height: 150%
+    color: #060709
+    line-height: 150%
+    &.main
+        font-size: 16px
+        color: #248461
+        @media screen and ( max-width: 500px )
+            font-size: 14px
+
+.btn
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+.delete
+    width: 20px
+    height: 20px
+    border-radius: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1.2px solid #F4F4F4
+    transition: 0.3s
+    img
+        width: 8px
+    &:hover, &:active
+        border: 1.2px solid #c0c0c0
+
+.info
+    display: flex
+    align-items: center
+    gap: 12px
+    font-size: 14px
+
+.count
+    font-weight: 300
+    line-height: 150%
+    color: #9D9EA2
+
+.text
+    font-size: 14px
+    line-height: 150%
+    color: #9D9EA2
+
+.info_price
+    line-height: 150%
+    color: #717378
+    display: flex
+    align-items: center
+    gap: 10px
+
+.old_price
+    text-decoration: line-through
+
+.on_sale
+    color: #EB2606
+
+.price
+    font-size: 14px
+    line-height: 150%
+    text-align: right
+    color: #060709
+
+.wrapper_footer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 16px
+    border-top: 1px solid #F4F4F4

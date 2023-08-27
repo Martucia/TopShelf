@@ -1,0 +1,82 @@
+.wrapper
+    position: relative
+    width: 100%
+    padding: 300px 5% 100px
+    background: #01100B
+    margin-top: 200px
+    color: #fff
+    @media screen and ( max-width: 800px )
+        padding: 250px 5% 100px
+        margin-top: 150px
+    @media screen and ( max-width: 600px )
+        padding: 200px 5% 100px
+        margin-top: 100px
+.desc
+    font-size: 16px
+    line-height: 150%
+    margin: 1.5em auto 90px
+    text-align: center
+    color: #9D9EA2
+    max-width: 800px
+    @media screen and ( max-width: 600px )
+        font-size: 14px
+
+.block_wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 32px
+    row-gap: 64px
+    margin-bottom: 80px
+
+.block
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+
+.image
+    width: 100%
+    max-width: 140px
+    img
+        width: 100%
+    @media screen and ( max-width: 600px )
+        max-width: 100px
+
+.title
+    font-weight: 500
+    font-size: 24px
+    line-height: 150%
+    letter-spacing: -0.5px
+    margin: 1em 0
+    @media screen and ( max-width: 600px )
+        font-size: 18px
+
+.text
+    font-size: 15px
+    line-height: 150%
+    text-align: center
+    color: #9D9EA2
+    max-width: 500px
+    text-align: center
+    @media screen and ( max-width: 600px )
+        font-size: 14px
+
+.numeric
+    width: 40px
+    height: 40px
+    background: #F2BC1B
+    backdrop-filter: blur(4px)
+    border-radius: 100px
+    position: absolute
+    top: 0
+    left: calc(50% - 90px)
+    font-weight: 500
+    font-size: 16px
+    line-height: 150%
+    color: #05422C
+    display: flex
+    align-items: center
+    justify-content: center
+    @media screen and ( max-width: 600px )
+        width: 30px
+        height: 30px

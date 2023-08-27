@@ -1,0 +1,49 @@
+@import '@variables'
+
+.filter
+    margin-bottom: 64px
+    display: flex
+    align-items: center
+    gap: 32px
+    padding-bottom: 32px
+    border-bottom: 1px solid #F4F4F4
+    @media screen and ( max-width: 1000px )
+        flex-direction: column
+        align-items: start
+    span
+        font-size: 24px
+        line-height: 150%
+        letter-spacing: -0.5px
+
+.filters
+    display: flex
+    flex-wrap: wrap
+    gap: 1em
+    justify-content: space-between
+
+.navigate
+    background: #FFFFFF
+    border: 1px solid #F4F4F4
+    border-radius: 100px
+    color: $gr-d
+    padding: 12px 20px
+    transition: 0.3s
+    white-space: nowrap
+    &:hover
+        background: #F2F6F4
+        border: 1px solid #05422C
+
+.active
+    background: #F2F6F4
+    border: 1px solid #05422C
+
+.wrapper
+    display: grid
+    grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) )
+    gap: 32px
+    justify-content: space-between
+    row-gap: 45px
+    @media screen and ( max-width: 900px )
+        grid-template-columns: 1fr 1fr
+        gap: 16px
+        row-gap: 40px

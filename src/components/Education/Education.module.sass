@@ -1,0 +1,96 @@
+@import '@variables'
+
+.wrapper
+    width: 90%
+    margin: 80px auto
+
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-weight: 600
+    font-size: 32px
+    line-height: 120%
+    letter-spacing: -1.5px
+    color: $gr-d
+    padding-bottom: 1em
+    border-bottom: 1px solid rgba(113, 115, 120, 0.5)
+    margin-bottom: 64px
+    gap: 15px
+
+.wrapper_title
+    font-weight: 600
+
+.link
+    font-size: 18px
+    line-height: 150%
+    text-decoration-line: underline
+    color: #17AF26
+    font-weight: 400
+    white-space: nowrap
+    @media screen and ( max-width: 1000px )
+        font-size: 16px
+
+.block_wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    gap: 32px
+    @media screen and ( max-width: 1000px )
+        gap: 20px
+    @media screen and ( max-width: 900px )
+        grid-template-columns: 1fr 1fr
+        gap: 30px
+        row-gap: 40px
+
+.block
+    display: flex
+    flex-direction: column
+    width: 100%
+    position: relative
+    padding-bottom: 10px
+    .link
+        position: absolute
+        bottom: 0
+        left: 0
+
+.image
+    width: 100%
+    overflow: hideen
+    border-radius: 8px
+    img
+        width: 100%
+
+.date
+    font-size: 14px
+    line-height: 150%
+    color: #717378
+    margin: 24px 0 8px
+    @media screen and ( max-width: 1000px )
+        font-size: 12px
+
+.title
+    font-weight: 500
+    font-size: 24px
+    line-height: 150%
+    letter-spacing: -0.5px
+    color: #1A1E26
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+    overflow: hidden
+    text-overflow: ellipsis
+    @media screen and ( max-width: 1000px )
+        font-size: 18px
+
+.desc
+    font-size: 16px
+    line-height: 150%
+    color: #717378
+    margin: 8px 0 32px
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 5
+    overflow: hidden
+    text-overflow: ellipsis
+    @media screen and ( max-width: 1000px )
+        font-size: 14px

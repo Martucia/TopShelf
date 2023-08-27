@@ -1,0 +1,122 @@
+@import '@variables'
+
+.filter
+    border-right: 1px solid #F4F4F4
+    padding-right: 32px
+    @media screen and ( max-width: 1100px )
+        border-right: 0
+        padding-right: 0
+
+.header
+    font-size: 24px
+    line-height: 150%
+    letter-spacing: -0.5px
+    color: $gr-d
+    padding: 5px 0 28px
+    border-bottom: 1px solid #F4F4F4
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.inner_close
+    opacity: 0
+    display: none
+
+.clear
+    background: #F3FBF4
+    border-radius: 1000px
+    font-weight: 400
+    font-size: 14px
+    line-height: 150%
+    color: #17AF26
+    width: 100%
+    max-width: 160px
+    padding: 10px 0
+    text-align: center
+    margin-top: 30px
+    transition: 0.3s
+    &:hover
+        background: #17af26a4
+        color: #fff
+    &:active
+        background: #17AF26
+        color: #fff
+
+.block
+    padding: 20px 0
+    border-bottom: 1px solid #F4F4F4
+
+.block_title
+    font-weight: 300
+    font-size: 12px
+    line-height: 150%
+    letter-spacing: 1px
+    margin-bottom: 20px
+
+.radios
+    display: flex
+    flex-direction: column
+    gap: 13px
+
+.label
+    display: flex
+    align-items: center
+    gap: 12px
+    cursor: pointer
+    &.active
+        .radio_circle
+            background: #17AF26
+            border: 0
+
+.radio_circle
+    width: 20px
+    height: 20px
+    border-radius: 100%
+    border: 1px solid #F4F4F4
+    display: flex
+    align-items: center
+    justify-content: center
+
+.radio_circle_inner
+    width: 8px
+    height: 8px
+    background: #fff
+    border-radius: 100%
+
+.count
+    font-weight: 300
+    font-size: 14px
+    line-height: 150%
+    color: #9D9EA2
+    padding-left: 12px
+    border-left: 1px solid #808080
+    border-left: 1px solid #F4F4F4
+
+.slider_header
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 12px
+    div
+        background: #F4F4F4
+        border-radius: 100px
+        font-size: 12px
+        line-height: 150%
+        color: #060709
+        padding: 5px 15px
+
+.slider_btn
+    margin-top: 30px
+    padding: 10px 0
+    text-align: center
+    background: #17AF26
+    border-radius: 1000px
+    width: 100%
+    max-width: 100px
+    font-size: 14px
+    line-height: 150%
+    color: #FFFFFF
+    transition: 0.3s
+    &:hover
+        transform: translate(0, 3px)

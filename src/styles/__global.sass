@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;900&display=swap')
+
+@import '@variables'
+
+input, textarea
+    background: #FFFFFF
+    border: 1px solid #F4F4F4
+    border-radius: 100px
+    font-size: 16px
+    &::placeholder
+        color: #C8C9CB
+    &:not(:placeholder-shown)
+        color: #000
+
+input[type="search"]::-webkit-search-cancel-button
+    -webkit-appearance: none
+
+input[type="search"]::-moz-search-clear-button
+    display: none
+
+.green-btn
+    background: #17AF26
+    border-radius: 100px
+    padding: 1em 0
+    text-align: center
+    font-weight: 500
+    font-size: 18px
+    color: #fff
+    display: block
+    width: 100%
+    white-space: nowrap
+    transition: 0.3s
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 8px
+    &:hover
+        transform: translate(0, 3px)
+    @media screen and ( max-width: 800px )
+        font-size: 16px
+    &-border
+        width: 1px
+        height: 12px
+        background: #fff
+    &:disabled
+        background: #818181
+        cursor: no-drop
+        &:hover
+            transform: translate(0, 0)
+
+::-webkit-scrollbar
+    width: 5px
+
+::-webkit-scrollbar-track
+    background: transparent
+    padding: 0 2px
+
+::-webkit-scrollbar-thumb
+    background: rgba(107, 107, 107, 0.3)
+    border-radius: 8px
+    border-radius: 3px solid #ffffff
+
+.main-title
+    color: $gr-d
+    font-weight: 600
+    font-size: 64px
+    line-height: 110%
+    letter-spacing: -4px
+    span
+        color: #F2BC1B
+    @media screen and ( max-width: 1200px )
+        font-size: 48px
+    @media screen and ( max-width: 600px )
+        font-size: 32px

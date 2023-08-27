@@ -1,0 +1,161 @@
+.wrapper
+    width: 90%
+    margin: 40px auto
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 80px
+    @media screen and ( max-width: 1100px )
+        grid-template-columns: 1fr
+
+.gallery
+    height: max-content
+    padding: 30px
+
+.info
+    display: flex
+    flex-direction: column
+
+.category
+    font-size: 14px
+    line-height: 150%
+    letter-spacing: 4px
+    color: #9D9EA2
+    margin-bottom: 16px
+
+.name
+    font-weight: 600
+    font-size: 32px
+    line-height: 120%
+    letter-spacing: -1.5px
+    color: #060709
+    margin-bottom: 16px
+
+.compositions
+    display: flex
+    align-items: center
+    gap: 16px
+    margin-bottom: 16px
+
+.composition
+    background: #F2F6F4
+    border-radius: 8px
+    padding: 8px 16px
+    font-size: 12px
+    line-height: 150%
+    color: #05422C
+
+.row
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 16px
+    margin-bottom: 20px
+
+.price
+    font-weight: 500
+    font-size: 20px
+    line-height: 150%
+    display: flex
+    color: #000
+    align-items: center
+    gap: 12px
+
+.onSale
+    color: #EB2606
+
+.old_price
+    font-size: 16px
+    line-height: 150%
+    text-decoration-line: line-through
+    color: #9D9EA2
+
+.rate
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 14px
+    line-height: 150%
+    color: #060709
+    gap: 12px
+    img
+        width: 15px
+        height: 15px
+    @media screen and ( max-width: 450px )
+        font-size: 12px
+
+.mark
+    display: flex
+    align-items: center
+    gap: 6px
+
+.line
+    background: #C8C9CB
+    width: 1px
+    height: 12px
+
+.reviews
+    display: flex
+    align-items: center
+    gap: 6px
+    span
+        color: #C8C9CB
+
+.block_wrapper
+    display: flex
+    flex-direction: column
+    gap: 20px
+    background: #FFFFFF
+    border: 1px solid #F4F4F4
+    border-radius: 12px
+    margin-bottom: 20px
+    padding: 20px 24px
+
+.block
+    display: grid
+    grid-template-columns: 32px 1fr
+    gap: 16px
+
+.block_icon
+    width: 100%
+    img
+        width: 100%
+
+.block_inner
+    display: flex
+    flex-direction: column
+    gap: 8px
+
+.block_title
+    font-weight: 300
+    font-size: 12px
+    line-height: 150%
+    display: flex
+    align-items: center
+    letter-spacing: 1px
+    color: #717378
+
+.block_text
+    font-size: 14px
+    line-height: 150%
+    color: #060709
+
+.desc
+    display: flex
+    flex-direction: column
+    gap: 12px
+    padding-bottom: 24px
+    border-bottom: 1px solid #F4F4F4
+    margin-bottom: 20px
+
+.desc_title
+    font-weight: 300
+    font-size: 12px
+    line-height: 150%
+    letter-spacing: 1px
+    text-transform: uppercase
+    color: #717378
+
+.desc_text
+    font-size: 14px
+    line-height: 150%
+    color: #46494F

@@ -1,0 +1,44 @@
+.coupon
+    display: grid
+    grid-template-columns: 1fr max-content
+    gap: 12px
+    width: 100%
+.input
+    height: 48px
+    width: 100%
+    padding: 4px 24px
+    border-radius: 8px
+    border: 1px solid var(--neutral-50, #F4F4F4)
+    background: #FFF
+    transition: 0.3s
+
+.inp_error
+    border: 1px solid #a80101
+
+.inp_success
+    border: 1px solid #17AF26
+
+.button
+    height: 48px
+    padding: 8px 20px
+    gap: 8px
+    white-space: nowrap
+    border-radius: 100px
+    background: var(--primary-50, #F3FBF4)
+    color: var(--primary-500, #17AF26)
+    font-weight: 500
+    &:disabled
+        background: #f4f4f4
+        color: #3a3a3a
+        cursor: not-allowed
+        pointer-events: all !important
+
+.error
+    color: #a80101
+    font-weight: 500
+    padding-left: 10px
+
+.success
+    color: #17AF26
+    font-weight: 500
+    padding-left: 10px

@@ -1,0 +1,51 @@
+@import '@variables'
+
+.wrapper
+    padding: 100px 5%
+
+.desc
+    font-size: 16px
+    line-height: 150%
+    color: #717378
+    margin: 1.5em 0 4em
+    max-width: 780px
+
+.block_wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 32px
+    row-gap: 40px
+    @media screen and ( max-width: 1000px )
+        grid-template-columns: 1fr 1fr
+    @media screen and ( max-width: 600px )
+        grid-template-columns: 1fr
+
+.block
+    background: #FFFFFF
+    border: 1px solid rgba(206, 207, 213, 0.4)
+    border-radius: 12px
+    padding: 32px
+    display: flex
+    flex-direction: column
+
+.image
+    width: 56px
+    img
+        width: 100%
+
+.title
+    font-weight: 500
+    font-size: 24px
+    line-height: 150%
+    letter-spacing: -0.5px
+    color: $gr-d
+    margin: 32px 0 16px
+    @media screen and ( max-width: 1000px )
+        margin: 16px 0
+
+.text
+    font-size: 14px
+    line-height: 150%
+    color: #717378
+    @media screen and ( max-width: 600px )
+        font-size: 16px

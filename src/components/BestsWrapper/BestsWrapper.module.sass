@@ -1,0 +1,89 @@
+@import '@variables'
+
+.wrapper
+    margin: 120px 0
+
+.nav
+    margin-bottom: 64px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 32px
+    padding: 0 5%
+
+.navigate
+    background: #FFFFFF
+    border: 1px solid #F4F4F4
+    border-radius: 100px
+    color: $gr-d
+    padding: 12px 0
+    transition: 0.3s
+    &:hover
+        background: #F2F6F4
+        border: 1px solid #05422C
+
+.active
+    background: #F2F6F4
+    border: 1px solid #05422C
+
+.swiper_wrapper
+    display: flex
+    padding-left: 5%
+    @media screen and ( max-width: 800px )
+        display: block
+        padding-left: 0
+    
+
+.block
+    position: relative
+    background: #05422C
+    border-radius: 16px
+    width: 390px
+    display: flex
+    align-items: center
+    flex-direction: column
+    overflow: hidden
+    padding: 80px 3% 50px
+    max-width: 350px
+    min-width: 350px
+    z-index: 3
+    @media screen and ( max-width: 800px )
+        margin: 0 auto 50px
+        max-width: 100%
+        width: calc(100% - 40px)
+
+.bg_figure
+    background: linear-gradient(180deg, rgba(52, 102, 84, 0) 0%, rgba(52, 102, 84, 0.4) 100%)
+    border-radius: 12px
+    transform: rotate(5deg)
+    position: absolute
+    width: 261px
+    height: 371px
+    right: -40px
+    top: -130px
+
+.image
+    width: 100%
+    max-width: 180px
+    z-index: 2
+
+.name
+    font-weight: 500
+    font-size: 20px
+    margin: 24px 0 8px
+    color: #fff
+    z-index: 2
+
+.text
+    color: rgba(255, 255, 255, 0.6)
+    margin-bottom: 20px
+    z-index: 2
+    font-weight: 300
+    text-align: center
+    line-height: 150%
+
+.link
+    text-decoration-line: underline
+    color: #17AF26
+
+.swiper
+    display: flex
