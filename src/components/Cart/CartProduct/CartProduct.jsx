@@ -3,6 +3,7 @@ import del from '@images/close.svg';
 import { NavLink } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { removeFromCart } from '../../../actions/cart';
+import { BASE_URL } from '../../../utils/constants';
 
 const CartProduct = ({ close, id, name, image, discount, remainder, available, price, quantity, additional = [] }) => {
 
@@ -19,7 +20,7 @@ const CartProduct = ({ close, id, name, image, discount, remainder, available, p
     return (
         <div className={styles.product}>
             <div className={styles.image}>
-                <img src={"http://localhost:5001/images/" + image} alt="image" />
+                <img src={`${BASE_URL}/images/` + image} alt="image" />
             </div>
             <div className={styles.wrapper}>
                 <div className={styles.block}>

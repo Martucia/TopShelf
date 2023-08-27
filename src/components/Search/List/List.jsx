@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { NavLink } from 'react-router-dom';
 
 import styles from './List.module.sass';
+import { BASE_URL } from "../../../utils/constants";
 
 const List = ({ close }) => {
     const products = useSelector(state => state.search.slice(0, 5));
@@ -15,7 +16,7 @@ const List = ({ close }) => {
                         <NavLink key={product._id} to={"/product/" + product._id} className={styles.product}>
                             <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                                 <div className={styles.image}>
-                                    <img className={styles.image} src={"http://localhost:5001/images/" + product.images[0]} alt="image" />
+                                    <img className={styles.image} src={`${BASE_URL}/images/` + product.images[0]} alt="image" />
                                 </div>
                                 <div className={styles.name}>
                                     {product.name}

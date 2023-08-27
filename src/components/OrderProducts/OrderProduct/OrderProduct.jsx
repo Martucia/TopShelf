@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { changeQuantity } from '../../../actions/cart';
 import styles from './OrderProduct.module.sass';
+import { BASE_URL } from '../../../utils/constants';
 
 const OrderProduct = ({ product, quantity }) => {
     const dispatch = useDispatch();
@@ -12,7 +13,7 @@ const OrderProduct = ({ product, quantity }) => {
     return (
         <div className={styles.product}>
             <div className={styles.image}>
-                <img src={"http://localhost:5001/images/" + product.images[0]} alt="image" />
+                <img src={`${BASE_URL}/images/` + product.images[0]} alt="image" />
             </div>
             <div className={styles.inner}>
                 <div className={styles.name}>

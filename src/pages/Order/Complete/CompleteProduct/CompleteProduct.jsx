@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom';
 
 import styles from './CompleteProduct.module.sass';
 
+import { BASE_URL } from '../../../../utils/constants';
+
 const CompleteProduct = ({ product, quantity }) => {
 
     const getSum = () => {
@@ -12,7 +14,7 @@ const CompleteProduct = ({ product, quantity }) => {
         <div className={styles.product}>
             <div className={styles.block}>
                 <div className={styles.image}>
-                    <img src={"http://localhost:5001/images/" + product.images[0]} alt="image" />
+                    <img src={`${BASE_URL}/images/` + product.images[0]} alt="image" />
                 </div>
 
                 <NavLink className={styles.name} to={"/product/" + product._id}>

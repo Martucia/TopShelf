@@ -13,6 +13,7 @@ import star from "@images/star.png"
 
 import OrderBlock from '../../components/OrderBlock/OrderBlock';
 import ProductNav from '../../components/ProductNav/ProductNav';
+import { BASE_URL } from '../../utils/constants';
 
 import { getProduct } from '../../actions/product';
 
@@ -36,8 +37,8 @@ const Product = () => {
         if (product) {
             let imgs = product.images.map(img => {
                 return {
-                    original: `http://localhost:5001/images/${img[0]}`,
-                    thumbnail: `http://localhost:5001/images/${img[0]}`,
+                    original: `${BASE_URL}/images/${img[0]}`,
+                    thumbnail: `${BASE_URL}/images/${img[0]}`,
                     originalClass: "gallery_bullet",
                     thumbnailClass: "gallery_bullet_thumbnailClass"
                 }

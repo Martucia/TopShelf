@@ -3,6 +3,7 @@ import star from "@images/star.png"
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 import { toCart } from '../../actions/cart'
+import { BASE_URL } from '../../utils/constants';
 
 const ProductCart = ({ paddingRight = 0, product }) => {
     const category = useSelector(state => state.categories.find(c => c._id == product.category));
@@ -30,7 +31,7 @@ const ProductCart = ({ paddingRight = 0, product }) => {
             )}
 
             <NavLink className={styles.image_block} to={"/product/" + product._id} >
-                <img className={styles.image} src={"http://localhost:5001/images/" + product.images[0]} alt="image" />
+                <img className={styles.image} src={`${BASE_URL}/images/` + product.images[0]} alt="image" />
             </NavLink>
             <div className={styles.category}>
                 {category?.name}
